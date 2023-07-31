@@ -42,11 +42,12 @@ while True:
             audioRespuesta("Planta regada")
 
         elif frase == "salir":
-            print("ASISTENTE: Hasta luego. ¡Que tengas un buen día!")
+            print("ASISTENTE: Hasta pronto")
+            audioRespuesta("Hasta pronto")
             break
 
         else:
-            print("ASISTENTE: No tengo esa instrucción en mi base de datos. Vuelve a repetirla.")
+            print("ASISTENTE: Instrucción no reconocida.")
             audioRespuesta("Instrucción no reconocida")
 
     except sr.UnknownValueError:
